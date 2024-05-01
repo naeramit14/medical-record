@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* TextEditor CSS */
+.quill {
+  min-width: 460px;
+}
+.ql-toolbar {
+  background-color: #f6f5f2;
+}
+.ql-container {
+  min-height: 100px;
+}
