@@ -7,7 +7,7 @@ function index() {
   const toolbarOptions = [
     ["bold", "italic", "underline"],
     [{ list: "ordered" }, { list: "bullet" }],
-    [{ size: ["small", false, "large",] }],
+    [{ size: ["small", false, "large"] }],
     [
       { color: ["black", "gray", "white", "red", "green", "blue", "yellow"] },
       {
@@ -25,15 +25,18 @@ function index() {
     [{ align: [] }],
     ["clean"],
   ];
+
   return (
-    <ReactQuill
-      theme="snow"
-      value={value}
-      onChange={setValue}
-      modules={{
-        toolbar: toolbarOptions,
-      }}
-    />
+    <>
+      <ReactQuill
+        theme="snow"
+        value={value}
+        onChange={setValue}
+        modules={{
+          toolbar: toolbarOptions,
+        }}
+      />
+    </>
   );
 }
 
